@@ -1,4 +1,4 @@
-## 목소리 파일 추가
+## 목소리 파일 추가 (최소 13초 이상의 wav 파일들)
 ```
 digitial-sound-module2
     └─voice
@@ -10,7 +10,7 @@ digitial-sound-module2
         └─6조
 ```
 
-## 테스트할 파일 추가
+## 테스트할 파일 추가 (4초 / 64000frame wav 파일들)
 
 ```
 digitial-sound-module2
