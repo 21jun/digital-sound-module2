@@ -42,3 +42,28 @@ pip install numpy scipy
 python main.py
 ```
 
+## 결과
+```
+(venv) C:\Users\oasis\develop\digital-sound-module2>python main.py
+------Prediction------
+17김지수 (2).wav 의 최종 예측 Label = 17김지수.wav
+
+2조 이수진 cut.wav 의 최종 예측 Label = 이수진.wav
+
+3조 김기백 cut.wav 의 최종 예측 Label = 김기백.wav
+
+4초 신현욱 cut.wav 의 최종 예측 Label = 신현욱.wav
+
+5조 김규리 cut.wav 의 최종 예측 Label = 김규리.wav
+
+6조 이정민 cut.wav 의 최종 예측 Label = 이정민.wav
+
+cut(5.7-9.7).wav 의 최종 예측 Label = 15김지수.wav
+
+김규리 (2).wav 의 최종 예측 Label = 김규리.wav
+
+김재영 (2).wav 의 최종 예측 Label = 김재영.wav
+
+진수빈4초.wav 의 최종 예측 Label = 진수빈.wav
+
+```
