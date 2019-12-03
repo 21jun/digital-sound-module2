@@ -17,8 +17,10 @@ def predict(label, voice, mean_fft_voices):
         prediction[name] = cos
 
     prediction_desc = sorted(prediction.items(), key=lambda kv: kv[1], reverse=True)
-    # print(f"{label} 유사도 ... gap :", prediction_desc[0][1] - prediction_desc[1][1])
     print(f"{label} 의 최종 예측 Label =", prediction_desc[0][0], end='\n\n')
+    for i in range(12):
+        print(prediction_desc[i][0], " : " ,prediction_desc[i][1])
+    print(end='\n\n')
     # if label.split('_')[0] != prediction_desc[0][0].split('.')[0]:
     #     print("wrong!")
 
@@ -44,11 +46,12 @@ if __name__ == '__main__':
 
     fft_voices = {}
     for name, data in voices.items():
-        fft_voices[name] = [get_fft_data(data, x) for x in range(10)]
+        fft_voices[name] = [get_fft_data(data, x) for x in range(13)]
     
     mean_fft_voices = {}
     for name, data in fft_voices.items():
        mean_fft_voices[name] = np.array(data).mean(axis=0)
+       # mean_fft_voices[name] = np.array(data[2])
 
     print("------Prediction------")
 
