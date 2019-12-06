@@ -12,6 +12,9 @@ def get_fft_data(data, st):
 def predict(label, voice, mean_fft_voices):
     
     prediction = {}
+    # mean_fft_voices: 12명의 목소리 특징
+    # data: 12명의 목소리파일 List
+    # voice: 퓨리에 변환된 입력된 4초짜리 파일 
     for name, data in mean_fft_voices.items():
         cos = 1 - spatial.distance.cosine(voice, data)
         prediction[name] = cos
